@@ -13,12 +13,13 @@ html {
 body {
     font-family: $main-font;
     color:$color-primary;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 8rem calc(90vh - 8rem);
+    grid-template-rows: 10rem calc(90vh - 10rem);
     grid-auto-rows: min-content;
-    grid-template-columns: [full-start] 16rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 16rem [full-end];
+    grid-template-columns: [full-start] 18rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 18rem [full-end];
 }

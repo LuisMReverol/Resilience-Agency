@@ -11,10 +11,52 @@ html {
 body {
   font-family: "Rubik", sans-serif;
   color: #222222;
-  font-weight: 300; }
+  font-weight: 400;
+  font-size: 1.6rem; }
 
 .container {
   display: grid;
-  grid-template-rows: 8rem calc(90vh - 8rem);
+  grid-template-rows: 10rem calc(90vh - 10rem);
   grid-auto-rows: min-content;
-  grid-template-columns: [full-start] 16rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 16rem [full-end]; }
+  grid-template-columns: [full-start] 18rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 18rem [full-end]; }
+
+.navigation {
+  grid-column: center-start/center-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0; }
+  .navigation__menu {
+    display: flex; }
+    .navigation__menu--item {
+      font-size: 1.6rem;
+      font-weight: 400; }
+    .navigation__menu--item:not(:last-child) {
+      margin-right: 4rem; }
+    .navigation__menu--link {
+      text-decoration: none;
+      color: #222222;
+      transition: all 0.35s ease-in-out;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      -ms-transition: all 0.35s ease-in-out;
+      -o-transition: all 0.35s ease-in-out; }
+      .navigation__menu--link::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 3px;
+        background-color: transparent;
+        transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out; }
+      .navigation__menu--link:hover {
+        color: #E74C3C; }
+      .navigation__menu--link:hover::after {
+        width: 100%;
+        background-color: #E74C3C; }
+  .navigation__logo {
+    height: 100%;
+    width: auto; }

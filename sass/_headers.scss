@@ -1,0 +1,59 @@
+.navigation {
+  grid-column: center-start/center-end;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 2rem 0;
+
+  &__menu {
+    display: flex;
+
+    &--item {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    &--item:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $color-primary;
+      transition: all 0.35s ease-in-out;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      -ms-transition: all 0.35s ease-in-out;
+      -o-transition: all 0.35s ease-in-out;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 3px;
+        background-color:transparent;
+        transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+    }
+
+      &:hover {
+        color: $color-secondary;
+      }
+
+      &:hover::after {
+        width: 100%;
+        background-color: $color-secondary;
+      }
+    }
+  }
+
+  &__logo {
+    height: 100%;
+    width: auto;
+  }
+}
