@@ -20,6 +20,44 @@ body {
   grid-auto-rows: min-content;
   grid-template-columns: [full-start] 18rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 18rem [full-end]; }
 
+.button {
+  background: transparent;
+  text-decoration: none;
+  color: #222222;
+  font-weight: 700;
+  border: 2px solid #222222;
+  padding: 0.8rem 3rem;
+  font-size: 2.5rem;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s; }
+  .button--transparent {
+    color: #4E4E4E;
+    padding: 0.8rem 4.5rem;
+    border: 2px solid #4E4E4E; }
+    .button--transparent:hover {
+      background-color: #4E4E4E;
+      color: #FFFFFF; }
+  .button--fill {
+    background-color: #222222;
+    color: #FFFFFF;
+    box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.2); }
+    .button--fill:hover {
+      border: 2px solid #E74C3C;
+      background-color: #E74C3C; }
+
+.btn {
+  display: block; }
+  .btn:not(:last-child) {
+    margin-right: 2rem; }
+
 .navigation {
   grid-column: center-start/center-end;
   display: flex;
@@ -60,3 +98,52 @@ body {
   .navigation__logo {
     height: 100%;
     width: auto; }
+
+.header {
+  grid-row: 2 / 3;
+  grid-column: center-start/center-end;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header__content {
+    margin-right: auto; }
+    .header__content--highlight {
+      display: inline-block;
+      background-color: #E74C3C;
+      color: #FFFFFF;
+      padding: 0.5rem 1.5rem;
+      border-radius: 20rem;
+      -webkit-border-radius: 20rem;
+      -moz-border-radius: 20rem;
+      -ms-border-radius: 20rem;
+      -o-border-radius: 20rem; }
+    .header__content--heading {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      font-size: 3.6rem;
+      letter-spacing: 0;
+      font-weight: 400;
+      margin: 2rem 0;
+      text-align: left;
+      line-height: 1;
+      flex-basis: 100%; }
+    .header__content--heading-bold {
+      font-size: 6rem;
+      font-weight: 700; }
+    .header__content--buttons {
+      width: 100%;
+      display: flex; }
+  .header__video {
+    max-width: 100%;
+    min-width: 38rem;
+    flex-basis: 50%; }
+    .header__video--file {
+      width: 100%;
+      height: auto;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px; }
