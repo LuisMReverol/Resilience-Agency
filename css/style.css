@@ -21,9 +21,11 @@ body {
   grid-template-columns: [full-start] 18rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 18rem [full-end]; }
 
 .button {
+  display: inline-block;
   background: transparent;
   text-decoration: none;
   color: #222222;
+  white-space: nowrap;
   font-weight: 700;
   border: 2px solid #222222;
   padding: 0.8rem 3rem;
@@ -52,11 +54,95 @@ body {
     .button--fill:hover {
       border: 2px solid #E74C3C;
       background-color: #E74C3C; }
+  .button--inverse {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF; }
+    .button--inverse:hover {
+      background-color: #FFFFFF;
+      color: #222222;
+      border: 2px solid #FFFFFF; }
 
 .btn {
   display: block; }
   .btn:not(:last-child) {
     margin-right: 2rem; }
+
+.button-margin {
+  display: block;
+  margin-top: 2rem; }
+
+.section-definition {
+  grid-column: full-start/full-end;
+  background-color: #222222;
+  overflow: hidden;
+  clip-path: ellipse(100% 50% at 50% 50%);
+  z-index: 1; }
+  .section-definition__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0 20rem 0;
+    color: #FFFFFF;
+    line-height: 1.2; }
+    .section-definition__content--highlight {
+      display: inline-block;
+      background-color: #E74C3C;
+      color: #FFFFFF;
+      padding: 0.5rem 5rem;
+      margin-bottom: 2rem;
+      border-radius: 20rem;
+      -webkit-border-radius: 20rem;
+      -moz-border-radius: 20rem;
+      -ms-border-radius: 20rem;
+      -o-border-radius: 20rem; }
+    .section-definition__content--heading {
+      font-size: 5.5rem;
+      width: 30%;
+      text-align: center;
+      margin-bottom: 3rem;
+      font-weight: 700; }
+    .section-definition__content--text {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      width: 44.3%;
+      font-weight: 300; }
+
+.section-cards {
+  grid-column: center-start / center-end;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rem; }
+  .section-cards__container {
+    margin-top: -15vh;
+    z-index: 20;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.2);
+    padding: 5rem 0 8rem 0;
+    min-width: 34rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; }
+    .section-cards__container:not(:last-child) {
+      margin-right: 7rem; }
+    .section-cards__container--text {
+      font-weight: 700;
+      color: #222222;
+      font-size: 2.5rem;
+      text-transform: none;
+      line-height: 1.1;
+      margin-bottom: 4rem;
+      text-align: center; }
+    .section-cards__container--span {
+      font-weight: 300;
+      width: 100%; }
+    .section-cards__container--img {
+      width: 35%;
+      height: 35%;
+      margin-bottom: 3rem; }
 
 .navigation {
   grid-column: center-start/center-end;

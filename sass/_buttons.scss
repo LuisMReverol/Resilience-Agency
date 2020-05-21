@@ -1,7 +1,9 @@
 .button {
+    display: inline-block;
     background:transparent;
     text-decoration: none;
     color:$color-primary;
+    white-space: nowrap;
     font-weight: 700;
     border: 2px solid $color-primary;
     padding:0.8rem 3rem;
@@ -23,6 +25,7 @@
         color:$color-grey-dark-1;
         padding: 0.8rem 4.5rem;
         border: 2px solid $color-grey-dark-1;
+        
 
         &:hover {
             background-color: $color-grey-dark-1;
@@ -42,9 +45,25 @@
         }
     }
 
+    &--inverse{
+        border: 2px solid $color-white; 
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-primary;
+            border: 2px solid $color-white; 
+        }
+    }
+
 
 }
 .btn {
     display: block;
     &:not(:last-child){margin-right: 2rem;}
+}
+
+.button-margin{
+    display: block;
+    margin-top:2rem;
 }
