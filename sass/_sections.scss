@@ -1,17 +1,26 @@
 //Section Definition
-.section-definition {
-  grid-column: full-start/full-end;
-  background-color: $color-primary;
+.elipse {
   overflow: hidden;
   clip-path: ellipse(100% 50% at 50% 50%);
   z-index: 1;
+  background-color: $color-primary;
+  color: $color-white!important;
+}
+
+.content__margin {
+  margin: 15vh 0 20rem 0;
+}
+
+.section-definition {
+  grid-column: full-start/full-end;
+  text-align: center;
+  margin-bottom:$margin-section;
+  color:$color-primary;
 
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh 0 20rem 0;
-    color: $color-white;
     line-height: 1.2;
 
     &--highlight {
@@ -28,10 +37,11 @@
     }
 
     &--heading {
-      font-size: 5.5rem;
-      width: 30%;
       text-align: center;
       margin-bottom: 3rem;
+    }
+
+    &--span{
       font-weight: 700;
     }
 
@@ -39,7 +49,7 @@
       font-size: 2.5rem;
       text-align: center;
       margin-bottom: 2rem;
-      width: 44.3%;
+      width: 45%;
       font-weight: 300;
     }
   }
@@ -54,7 +64,7 @@
   margin-bottom: 20rem;
 
   &__container {
-    margin-top: -15vh;
+    margin-top: -45vh;
     z-index: 20;
     text-align: center;
     background-color: $color-white;
@@ -67,28 +77,35 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 
-    &:not(:last-child){
-        margin-right: 7rem;
+    &:not(:last-child) {
+      margin-right: 7rem;
     }
 
     &--text {
       font-weight: 700;
-      color:$color-primary;
+      color: $color-primary;
       font-size: 2.5rem;
       text-transform: none;
-      
+
       line-height: 1.1;
       margin-bottom: 4rem;
       text-align: center;
     }
     &--span {
-        font-weight: 300;
-        width: 100%;
+      font-weight: 300;
+      width: 100%;
     }
     &--img {
-        width: 35%;
-        height: 35%;
-        margin-bottom: 3rem;
+      width: 35%;
+      height: 35%;
+      margin-bottom: 3rem;
     }
   }
 }
+
+
+
+
+
+
+
