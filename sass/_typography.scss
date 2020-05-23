@@ -7,3 +7,23 @@
     font-size: 4.3rem;
     font-weight: 700;
 }
+
+.heading-3{
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 2px;
+        width: 4rem;
+        background-color: $color-secondary;
+        margin-bottom: 2rem;
+    }
+}
+
+.heading-4{
+    font-size: 1.4rem;
+    font-weight: 700;
+}

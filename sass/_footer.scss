@@ -2,4 +2,60 @@
   grid-column: 1/ -1;
   clip-path: ellipse(100% 100% at 50% 100%);
   background-color: $color-primary;
+  color: $color-white;
+  padding: 10rem 30rem;
+
+  &__container {
+    display: flex;
+    margin: 7rem 0;
+    justify-content: space-between;
+    text-align: left;
+
+    &--heading {
+      font-size: 1.7rem;
+      font-weight: 700;
+       &:last-of-type{
+         margin-top: 2rem;
+       }
+    }
+
+    &--link {
+      @include links;
+    }
+
+    
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+
+    &::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 2px;
+        width:35rem;
+        background-color: $color-grey-dark-1;
+        margin-bottom: 4rem;
+    }
+    &--links {
+      display: flex;
+    }
+
+    &--link {
+      @include links;
+      font-size: 1.3rem;
+      &:not(:last-child) {
+        margin-right: 4.5rem;
+      }
+    }
+
+    &--text {
+      font-size: 9px;
+    }
+  }
 }
