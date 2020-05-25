@@ -23,15 +23,36 @@
 
 @mixin links {
   display: block;
-      text-decoration: none;
-      color: $color-white;
-      transition: all 0.2s ease-in-out;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -ms-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: $color-white;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 
-      &:hover {
-        color: $color-secondary;
-      }
+  &:hover {
+    color: $color-secondary;
+  }
 }
+
+@mixin texts {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+@mixin cards {
+  z-index: 20;
+  background-color: $color-white;
+  box-shadow: $shadow-button;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+

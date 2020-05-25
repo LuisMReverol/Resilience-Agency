@@ -1,0 +1,108 @@
+.section-cards {
+    grid-column: center-start / center-end;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-bottom:$margin-section;
+    margin-top: -30vh;
+
+    &__img-left {
+        width: 120%;
+        margin-right: -14rem;
+    }
+
+    &__img-right {
+        width: 120%;
+        margin-left: -14rem;
+    }
+  
+    &__box{
+        display: flex;
+        margin-bottom: 5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__container {
+
+        &--2{
+            padding: 5rem 6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-height: 23rem;
+            min-width: 67rem;
+        }
+
+      z-index: 20;
+      text-align: center;
+      background-color: $color-white;
+      box-shadow: $shadow-button;
+      padding: 5rem 0 8rem 0;
+      min-width: 34rem;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+  
+      &:not(:last-child) {
+        margin-right: 7rem;
+      }
+  
+      &--text {
+        @include texts;
+        color: $color-primary;
+        text-transform: none;
+        margin-bottom: 4rem;
+      }
+
+      &--text-2 {
+        @include texts;
+        color: $color-primary;
+        text-align: left;
+        margin-bottom: 0.5rem;
+      }
+
+      &--list {
+          text-align: left;
+          width: 95%;
+          line-height: 1.1;
+      }
+
+      &--item {
+          font-size: 2.5rem;
+      }
+
+      &--heading {
+        line-height: 1.2;
+        font-weight: 700;
+        text-align: left;
+        font-size: 4.3rem; 
+        margin-bottom: 2rem; 
+      }
+
+      &--span {
+        font-weight: 700;
+        width: 100%;
+      }
+
+      &--img {
+        width: 35%;
+        height: 35%;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .section-cards-2{
+    grid-column: center-start / center-end;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:$margin-section;
+  }

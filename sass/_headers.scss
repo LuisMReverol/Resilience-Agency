@@ -56,6 +56,12 @@
     height: 100%;
     width: auto;
   }
+
+  &__link {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+  }
 }
 
 .header {
@@ -66,7 +72,7 @@
   justify-content: center;
   align-items: center;
   
-
+  
   &__content {
     margin-right:auto;
     
@@ -106,6 +112,12 @@
       display: flex;
     }
 
+    &--text{
+      @include texts;
+      width: 85%;
+      text-align: left;
+    }
+
     
   }
 
@@ -126,6 +138,12 @@
     }
   }
 
-  
+  &__background{
+    flex-basis:90%;
+
+    &--img{
+      width:80%;
+    }
+  }
   
 }
