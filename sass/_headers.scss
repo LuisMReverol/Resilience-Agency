@@ -67,14 +67,19 @@
 .header {
   grid-row: 2 / 3;
   grid-column: center-start/center-end;
-
+  padding: 10rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   
-  
   &__content {
     margin-right:auto;
+
+    &--faq {
+      flex-basis: 45%;
+      margin-right: 5rem;
+      
+    }
     
     &--highlight {
       display: inline-block;
@@ -122,7 +127,7 @@
   }
 
   &__video {
-    max-width: 100%;
+    max-width: 65%;
     min-width: 38rem;
     flex-basis:50%;
 
@@ -139,11 +144,8 @@
   }
 
   &__background{
-    flex-basis:90%;
+    max-width:45%;
+    min-width:35%;
 
-    &--img{
-      width:80%;
-    }
-  }
-  
+}
 }
