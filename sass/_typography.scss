@@ -1,32 +1,79 @@
-.heading-1{
-    font-size: 5.5rem;
-    font-weight: 700;
+//Headings
+.heading-1 {
+  font-size: 5.5rem;
+  font-weight: 700;
 }
 
-.heading-2{
-    font-size: 4.3rem;
-    font-weight: 700;
+.heading-2 {
+  font-size: 4.3rem;
+  font-weight: 700;
 }
 
-.heading-3{
-    font-size: 1.6rem;
-    font-weight: 700;
-
-    &::after{
-        content: "";
-        display: block;
-        height: 2px;
-        width: 2px;
-        width: 4rem;
-        background-color: $color-secondary;
-        margin-bottom: 2rem;
-    }
+.heading-5 {
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 1.1;  
+  &__span {
+      font-weight: 700;
+  }
 }
 
-.heading-4{
-    font-size: 1.4rem;
-    font-weight: 700;
+.heading-3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 2px;
+    width: 4rem;
+    background-color: $color-secondary;
+    margin-bottom: 2rem;
+  }
+}
+
+.heading-4 {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 //Cards typographies
 
+.card__text {
+  @include texts;
+
+  &--home {
+    color: $color-primary;
+    text-transform: none;
+    margin-bottom: 4rem;
+  }
+
+  &--img {
+    color: $color-primary;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  &--quote {
+      font-weight: 300;
+      font-style: italic;
+      text-align: left;
+  }
+
+  &--namepl {
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-align: right;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+  }
+
+  &--datedes{
+      font-size:1rem;
+      line-height: 1.1;
+      color: $color-grey-light-3;
+      font-weight: 700;
+      text-align: right;
+  }
+}

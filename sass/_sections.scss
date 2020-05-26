@@ -22,7 +22,7 @@
 
 
 
-.section-definition {
+.definition {
   grid-column: full-start/full-end;
   text-align: center;
   margin-bottom:$margin-section;
@@ -33,7 +33,6 @@
     line-height: 1.2;
     justify-content: center;
   }
-  
   
   &__content {
     display: flex;
