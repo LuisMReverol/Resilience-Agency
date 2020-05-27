@@ -19,9 +19,11 @@
 
   &__box {
     display: flex;
-    margin-bottom: 10rem;
     align-items: center;
     justify-content: center;
+    &:not(:last-child){
+      margin-bottom: 12rem;
+    }
   }
 }
 

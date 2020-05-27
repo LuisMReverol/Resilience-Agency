@@ -94,9 +94,10 @@ body {
     align-items: center; }
   .cards__box {
     display: flex;
-    margin-bottom: 10rem;
     align-items: center;
     justify-content: center; }
+    .cards__box:not(:last-child) {
+      margin-bottom: 12rem; }
 
 .card {
   z-index: 20;
@@ -222,7 +223,8 @@ body {
   padding: 10rem 30rem; }
   .footer__container {
     display: flex;
-    margin: 7rem 0;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
     justify-content: space-between;
     text-align: left; }
     .footer__container--heading {
@@ -251,7 +253,7 @@ body {
     width: 2px;
     width: 35rem;
     background-color: #4E4E4E;
-    margin-bottom: 4rem; }
+    margin-bottom: 2rem; }
   .footer__copyright--links {
     display: flex; }
   .footer__copyright--link {
