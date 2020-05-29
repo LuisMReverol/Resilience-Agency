@@ -28,7 +28,7 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(unquote ("min(42rem, 100%)"), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(min(42rem, 100%)), 1fr));
     gap: 5rem;
   }
 }
