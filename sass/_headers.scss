@@ -7,19 +7,33 @@
 
   margin: 2rem 0;
 
-  &__menu {
-    display: flex;
+  &__item {
+    font-size: 1.6rem;
+    font-weight: 400;
 
-    &--item {
-      font-size: 1.6rem;
-      font-weight: 400;
-    }
-
-    &--item:not(:last-child) {
+    &:not(:last-child) {
       margin-right: 4rem;
     }
+  }
 
-    &--link {
+  &__menu {
+    display: flex;
+  }
+
+  &__logo {
+    height: 100%;
+    width: auto;
+  }
+
+  &__link {
+    display: inline-block;
+
+    &--logo {
+      height: 100%;
+      width: auto;
+    }
+
+    &--item {
       text-decoration: none;
       color: $color-primary;
       transition: all 0.35s ease-in-out;
@@ -50,17 +64,20 @@
         background-color: $color-secondary;
       }
     }
-  }
 
-  &__logo {
-    height: 100%;
-    width: auto;
-  }
+    &--current {
+      display: block;
+      background-color: transparent;
+      color: $color-secondary;
 
-  &__link {
-    display: inline-block;
-    height: 100%;
-    width: auto;
+      &::after {
+        height: 3px;
+        width: 3px;
+        background-color: $color-secondary;
+        color: $color-secondary;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -71,16 +88,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   &__content {
-    margin-right:auto;
+    margin-right: auto;
 
     &--faq {
       flex-basis: 45%;
       margin-right: 5rem;
-      
     }
-    
+
     &--highlight {
       display: inline-block;
       background-color: $color-secondary;
@@ -117,19 +133,17 @@
       display: flex;
     }
 
-    &--text{
+    &--text {
       @include texts;
       width: 85%;
       text-align: left;
     }
-
-    
   }
 
   &__video {
     max-width: 65%;
     min-width: 38rem;
-    flex-basis:50%;
+    flex-basis: 50%;
 
     &--file {
       width: 100%;
@@ -139,13 +153,11 @@
       -moz-border-radius: 25px;
       -ms-border-radius: 25px;
       -o-border-radius: 25px;
-      
     }
   }
 
-  &__background{
-    max-width:45%;
-    min-width:35%;
-
-}
+  &__background {
+    max-width: 45%;
+    min-width: 35%;
+  }
 }

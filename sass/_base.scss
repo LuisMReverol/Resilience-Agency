@@ -22,4 +22,10 @@ body {
     grid-template-rows: 10rem calc(90vh - 10rem);
     grid-auto-rows: min-content;
     grid-template-columns: [full-start] 18rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 18rem [full-end];
+
 }
+
+
+
+
+

@@ -23,21 +23,21 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./apple-touch-icon.png"
+      href="../apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon-32x32.png"
+      href="../favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./favicon-16x16.png"
+      href="../favicon-16x16.png"
     />
-    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="manifest" href="../site.webmanifest" />
 
     <!-- External CSS -->
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
@@ -50,140 +50,65 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
-
   <body class="container">
     <nav class="navigation">
-      <a href="./index.html" class="navigation__link navigation__link--logo"><img src="./media/icons/logo-main.svg" alt="Logo image" class="navigation__logo" /></a>
+      <a href="../index.html" class="navigation__link navigation__link--logo"><img src="../media/icons/logo-main.svg" alt="Logo image" class="navigation__logo" /></a>
       <ul class="navigation__menu">
         <li class="navigation__item">
-          <a href="./views/help.html" class="navigation__link navigation__link--item">How we can help</a>
+          <a href="./help.html" class="navigation__link navigation__link--item">How we can help</a>
         </li>
         <li class="navigation__item">
-          <a href="./views/about.html" class="navigation__link navigation__link--item">About</a>
+          <a href="./about.html" class="navigation__link navigation__link--item">About</a>
         </li>
         <li class="navigation__item">
-          <a href="./views/contact.html" class="navigation__link navigation__link--item">Contact</a>
+          <a href="./contact.html" class="navigation__link navigation__link--item navigation__link--current">Contact</a>
         </li>
         <li class="navigation__item">
-          <a href="./views/faq.html" class="navigation__link navigation__link--item">FAQ</a>
+          <a href="./faq.html" class="navigation__link navigation__link--item">FAQ</a>
         </li>
       </ul>
     </nav>
     <header class="header">
-      <div class="header__content">
-        <p class="header__content--highlight">Resilience in time of Corona</p>
+      <div class="header__content header__content--faq">
         <h1 class="header__content--heading">
-          Get expert consilting up to<br /><span
-            class="header__content--heading-bold"
-            >100% subsidized by<br />German Government</span
+          <span class="header__content--heading-bold"
+            >Get in contact with<br/>your resilience</span
           >
         </h1>
+        <p class="header__content--text">
+          Meet with our founder and director Rosho to discuss how you can
+          benefit from the available subsidies, as well as our expertise in
+          digital business and organisational change.
+        </p>
         <div class="header__content--buttons">
-          <a href="#" class="btn button button--fill">Book a free meeting</a>
-          <a href="#" class="btn button button--transparent">Watch our video</a>
-        </div>
-      </div>
-      <div class="header__video">
-        <video
-          class="header__video--file"
-          src="./media/vid/resilience.mp4"
-          type="video/mp4"
-          controls
-        ></video>
-      </div>
-    </header>
-    <section class="definition elipse">
-      <div
-        class="definition__content content__margin definition__white"
-      >
-        <p class="definition__content--highlight">
-          Achive Sustainability
-        </p>
-        <h2 class="definition__content--heading heading-1">
-          Build a More<br />Resilient Business
-        </h2>
-        <p class="definition__content--text">
-          Many classic business models and services have been affected by the
-          coronavirus crisis. With the world forever changed by it, and with the
-          evolving nature of business, it’s more important than ever to be
-          adaptable.
-        </p>
-        <p class="definition__content--text">
-          You must be able to quickly find and implement new and sustainable
-          ways of doing business. Our consultancy provides the fresh approach
-          and ideas you need to expand your entrepreneurial know-how and become
-          resilient.
-        </p>
-        <p class="definition__content--text">
-          We offer practical advice on teams, technologies, processes, and
-          customer service orientation. In particular, we welcome expat
-          businesses in Germany and help with completing administrative
-          applications for the relevant subsidies.
-        </p>
-        <div class="definition__button">
-          <a href="#" class="button button--inverse button-margin"
-            >Build Resilience to the Crisis!</a
+          <a href="#" class="btn button button--transparent"
+            >Find out more &#9660;</a
           >
         </div>
       </div>
-    </section>
-    <section class="cards cards--home">
-      <div class="card card--home">
+      <div class="header__background">
         <img
-          src="./media/img/home-card-1.svg"
-          alt="Card Home Image 1"
-          class="card__img"
+          src="../media/img/hero-contact.svg"
+          alt=""
+          class="header__background--img"
         />
-        <h4 class="card__text card__text--home">
-          <span class="card__span">Go Online</span
-          ><br />fast with your<br />products and services
-        </h4>
-        <a href="#" class="button button--transparent">Watch our video</a>
       </div>
-      <div class="card card--home">
-        <img
-          src="./media/img/home-card-2.svg"
-          alt="Card Home Image 2"
-          class="card__img"
-        />
-        <h4 class="card__text card__text--home">
-          <span class="card__span">Reduce Costs</span
-          ><br />and explore sustainable<br />sources of profit
-        </h4>
-        <a href="#" class="button button--transparent">Watch our video</a>
-      </div>
-      <div class="card card--home">
-        <img
-          src="./media/img/home-card-3.svg"
-          alt="Card Home Image 3"
-          class="card__img"
-        />
-        <h4 class="card__text card__text--home">
-          <span class="card__span"
-            >Pivot Quickly to a new</span
-          ><br />digital or combined<br />business model
-        </h4>
-        <a href="#" class="button button--transparent">Watch our video</a>
-      </div>
-    </section>
+    </header>
     <section class="definition definition--margin">
       <div class="definition__content">
         <h2 class="heading-1">
           Book a Free 15-<br />Minute Consultation
         </h2>
         <p class="definition__content--text">
-          Meet with our founder and director Rosho to discuss how you can
-          benefit from the available subsidies, as well as our expertise in
-          digital business and organisational change.
+          Be aware that Rosho speaks German, English and French.  
         </p>
         <p class="definition__content--text">
+          If you would like to speak in another of the currently available languages,
           <span class="definition__content--span"
-            >Rosho speaks German, English and French.</span
+            >please fill the form and a qualified consultant will make contact with you in your language.</span
           >
-          &nbsp;Need another language? Submit the contact form and we’ll set you
-          up with a consultant who can help you!
         </p>
       </div>
       <!-- Start of Meetings Embed Script -->
@@ -200,13 +125,13 @@
     <section class="definition">
       <div class="definition__content">
         <h2 class="definition__content--heading heading-1">
-          Download Your<br />Free Resilience Checklist
+          We will <br />get back to you
         </h2>
         <p class="definition__content--text">
-          Take the first step toward a more resilent business today
+          within 24h after you send us an email
         </p>
       </div>
-      <a href="#" class="button button--fill">Get my free checklist</a>
+      <a href="mailto:info@resilience.agency" class="button button--fill">Email us</a>
     </section>
     <footer class="footer">
       <div class="footer__container">
@@ -261,7 +186,7 @@
         <div class="footer__copyright--links">
           <a href="#" class="footer__copyright--link">Impressum</a>
           <a href="#" class="footer__copyright--link">Datenschutz</a>
-          <a href="./views/faq.html" class="footer__copyright--link">FAQ</a>
+          <a href="./faq.html" class="footer__copyright--link">FAQ</a>
         </div>
         <p class="footer__copyright--text">
           &copy;(Page created for a client, modified to use on profesional
