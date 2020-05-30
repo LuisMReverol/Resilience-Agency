@@ -1,13 +1,14 @@
 .cards {
-  grid-column: center-start / center-end;
   display: flex;
+  grid-column: center-start / center-end;
   justify-content: center;
+
   margin-bottom: $margin-section;
   
-
   &--home{
-    position: relative;
     flex-flow: wrap;
+    position: relative;
+
     margin-top: -30vh;
   }
 
@@ -21,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:not(:last-child){
       margin-bottom: 12rem;
     }
@@ -35,27 +37,27 @@
 
 .card {
   z-index: 20;
+  border-radius: 20px;
+  
   background-color: $color-white;
   box-shadow: $shadow-button;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
 
   &--img {
-    padding: 2rem 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
+    padding: 2rem 7rem;
   }
 
   &--home {
-    padding: 5rem 0 8rem 0;
     position: relative;
-    text-align: center;
+
+    padding: 5rem 0 8rem 0;
     min-width: 34rem;
+
+    text-align: center;
+
     &:not(:last-child) {
         margin-right: 7rem;
       }
@@ -80,15 +82,18 @@
 
   &__heading {
     line-height: 1.2;
-    font-weight: 700;
-    text-align: left;
-    font-size: 4.3rem;
+
     margin-bottom: 2rem;
+
+    font-weight: 700;
+    font-size: 4.3rem;
+    text-align: left;
   }
 
   &__span {
-    font-weight: 700;
     width: 100%;
+
+    font-weight: 700;
   }
 
   &__img {
