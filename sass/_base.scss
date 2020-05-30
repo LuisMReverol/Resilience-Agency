@@ -6,8 +6,28 @@
     box-sizing: inherit;
 }
 
+//Media Queries
+
+$bp-larger: 103.125em;
+$bp-largest: 90.62em;
+$bp-large: 81.25em;
+$bp-largemid:75em;
+$bp-medium: 59.4em;
+
+
 html {
-    font-size: 62.5% //10px = 1rem 
+    font-size: 62.5%; //10px = 1rem 
+
+    @media only screen and (max-width: $bp-larger){
+    font-size: 55%;
+    }
+
+    @media only screen and (max-width: $bp-largest){
+        font-size: 50%;
+    }
+    @media only screen and (max-width: $bp-large){
+        font-size: 45%;
+    }
 }
 
 body {
@@ -22,8 +42,11 @@ body {
     grid-template-rows: 10rem calc(90vh - 10rem);
     grid-auto-rows: min-content;
     grid-template-columns: [full-start] 18rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 18rem [full-end];
-
+    @media only screen and (max-width: $bp-large){
+    grid-template-columns: [full-start] 8rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 8rem [full-end];
+    }
 }
+
 
 
 
