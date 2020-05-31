@@ -10,6 +10,18 @@
     position: relative;
 
     margin-top: -30vh;
+
+    @media only screen and (max-height: $bp-larger){
+    margin-top: -20vh;
+    }
+
+    @media only screen and (max-height: $bp-large){
+      margin-top: -25vh;
+    }
+
+    @media only screen and (max-height: $bp-medium){
+      margin-top: -30vh;
+    }
   }
 
   &--img{

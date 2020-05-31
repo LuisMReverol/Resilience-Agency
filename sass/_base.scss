@@ -13,6 +13,7 @@ $bp-largest: 90.62em;
 $bp-large: 81.25em;
 $bp-largemid:75em;
 $bp-medium: 59.4em;
+$bp-smallmid: 46.9em;
 
 
 html {
@@ -42,8 +43,17 @@ body {
     grid-template-rows: 10rem calc(90vh - 10rem);
     grid-auto-rows: min-content;
     grid-template-columns: [full-start] 18rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 18rem [full-end];
+    @media only screen and (max-height: $bp-larger){
+    grid-template-rows: 10rem min-content
+    }
     @media only screen and (max-width: $bp-large){
     grid-template-columns: [full-start] 8rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 8rem [full-end];
+    }
+    @media only screen and (max-width: $bp-medium){
+    grid-template-columns: [full-start] 6rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 6rem [full-end];
+    }
+    @media only screen and (max-width: $bp-smallmid){
+    grid-template-columns: [full-start] 4rem [center-start] repeat(3, [col-start] 1fr [col-end]) [center-end] 4rem [full-end];
     }
 }
 
