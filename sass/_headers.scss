@@ -2,7 +2,7 @@
   grid-column: center-start/center-end;
   display: flex;
   justify-content: space-between;
-  position:relative;
+  position: relative;
 
   margin: 2rem 0;
 
@@ -13,11 +13,16 @@
     &:not(:last-child) {
       margin-right: 4rem;
     }
+
+    @media only screen and (max-width: $bp-smallmid) {
+      display: none;
+    }
   }
 
   &__menu {
     display: flex;
- }
+
+  }
 
   &__logo {
     height: 100%;
@@ -28,7 +33,7 @@
     display: inline-block;
 
     &--logo {
-      max-height:100%;
+      max-height: 100%;
       width: auto;
     }
 
@@ -77,12 +82,30 @@
 
   &__icon {
     display: none;
+    color: $color-primary;
+    
+    @media only screen and (max-width: $bp-smallmid) {
+      display: block;
+      position: absolute;
+    }
   }
 }
 
-@media only screen and (max-width: $bp-smallmid){
+@media only screen and (max-width: $bp-smallmid) {
   .responsive {
-    flex-direction: column;
+    display: block;
+    position: sticky;
+    width: 100vh;
+    height: 100vh;
+    background-color: $color-white;
+    padding:2rem 4rem;
+    z-index: 1000;
+    margin: 0;
+
+    & li{
+      display: block; 
+      margin-top: 3rem;
+    }
   }
 }
 
@@ -94,17 +117,18 @@
   grid-column: center-start/center-end;
 
   padding: 10rem 0;
-  
-  @media only screen and (max-width: $bp-medium){
-  flex-direction: column;
- }
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 
   &__content {
     margin-right: auto;
+    flex-wrap: wrap;
 
-    @media only screen and (max-width: $bp-medium){
-    margin-right: 0;
-    margin-bottom: 5rem;
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 0;
+      margin-bottom: 5rem;
     }
 
     &--faq {
@@ -137,6 +161,7 @@
     &--buttons {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -146,11 +171,10 @@
     max-width: 65%;
     min-width: 38rem;
 
-    @media only screen and (max-width: $bp-medium){
-    flex-basis: auto;
+    @media only screen and (max-width: $bp-medium) {
+      flex-basis: auto;
     }
-  
-    
+
     &--file {
       width: 100%;
       height: auto;
@@ -163,4 +187,3 @@
     min-width: 35%;
   }
 }
-
