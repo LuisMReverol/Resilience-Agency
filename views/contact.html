@@ -49,13 +49,19 @@
       rel="stylesheet"
     />
 
+    <!--JS-->
+    <script src="../js/responsive.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="container">
     <nav class="navigation">
       <a href="../index.html" class="navigation__link navigation__link--logo"><img src="../media/icons/logo-main.svg" alt="Logo image" class="navigation__logo" /></a>
-      <ul class="navigation__menu">
+      <ul class="navigation__menu" id="nav">
+        <a href="javascript:void(0);" class="navigation__icon" onclick="myFunction()">
+          <i class="fas fa-bars fas-x4"></i>
+        </a>
         <li class="navigation__item">
           <a href="./help.html" class="navigation__link navigation__link--item">How we can help</a>
         </li>
